@@ -14,5 +14,6 @@ reverse all selected files (under the condition that the .bat file is in the sam
 
 ## Purpose :question:
 Where I work has a strong firewall which automatically scans - and blocks - any outgoing emails which
-have attachments of certain file formats. This project was created with the purpose of ensuring that 
-files do not match the security pattern and therefore enables me to email files to myself from work.
+have attachments of which match certain byte patterns. This project was created with the purpose of 
+ensuring that files do not match the security pattern and therefore enables me to email files to myself
+from work.
