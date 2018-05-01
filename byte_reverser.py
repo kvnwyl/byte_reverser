@@ -14,9 +14,8 @@ class ByteReverser:
             with open(self.file_name, "rb") as f:
                 return f.read()[::-1]
         except Exception as e:
-            print("An error occured while "
-                  "opening the file '{}'".format(
-                      self.file_name))
+            print("An error occured while opening the file '{}': {}".format(
+                      self.file_name, e))
 
 
 if __name__ == "__main__":
