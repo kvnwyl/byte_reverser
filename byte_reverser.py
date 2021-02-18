@@ -17,6 +17,15 @@ class ByteReverser:
             print("An error occured while opening the file '{}': {}".format(
                       self.file_name, e))
 
+    def write(self):
+        try:
+            with open("reversed_{}".format(self.file_name), "wb") as target:
+                target.write(self.read())
+        except Exception as e:
+            print("An error occurred while "
+                  "attempting to write file: '{}': {}".format(
+                      self.file_name, e))
+
 
 if __name__ == "__main__":
 
@@ -28,6 +37,4 @@ if __name__ == "__main__":
     for arg in args:
         file_name = os.path.basename(arg)
         reverser = ByteReverser(file_name)
-
-        with open("reversed_{}".format(file_name), "wb") as target:
-            target.write(reverser.read())
+        reverser.write()

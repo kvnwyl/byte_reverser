@@ -1,5 +1,5 @@
 # Byte Reverser :floppy_disk:
-Python script to reverse bytes in files.
+Simple Python utility script to reverse bytes in files.
 
 ## Usage :wrench:
 To launch script, run:
@@ -13,7 +13,8 @@ reverse all selected files (under the condition that the .bat file is in the sam
 **Note:** The script supports any number of files as arguments.
 
 ## Purpose :question:
-Where I work has a strong firewall which automatically scans - and blocks - any outgoing emails which
-have attachments of which match certain byte patterns. This project was created with the purpose of 
-ensuring that files do not match the security pattern and therefore enables me to email files to myself
-from work.
+For security reasons, my place of work has a very string firewall which automatically scans, blocks and destroys, any emails that it perceives as a threat (both incoming and outgoing). Whilst this protects against many genuine threats, it can often flag up friendly files and destroy them without prompt.
+
+This project was created with the purpose of ensuring that files do not match the security pattern and therefore enables emials to be sent from my place of work to myself at home.
+
+__Note:__ Whilst this utility is useful to allow files to be sent successfully, it is in no way intended for malicious use. This tool has ever only been used with the utmost respect for copyright, trade secrets and NDA contracts.
